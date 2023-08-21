@@ -2,26 +2,79 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html, body {
+    font-size: 17px;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.g-cols-1 {
+    @apply grid-cols-1
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.g-cols-2 {
+    @apply grid-cols-1 lg:grid-cols-2
+}
+.g-cols-3 {
+    @apply grid-cols-1 lg:grid-cols-3
+}
+.full-cover {
+    @apply w-full object-cover
+}
+.full-contain {
+    @apply w-full object-contain
+}
+.inherit-contain {
+    @apply object-contain
+}
+/* .textBase > p{
+    @apply text-base
+} */
+.textLg > p:first-child, .textLg > h1, .textLg > h2,  .textLg > h3, .textLg > h4, .textLg > h5, .textLg > h6{
+    @apply text-lg
+}
+.textXl > p:first-child, .textxl > h1, .textxl > h2,  .textxl > h3, .textxl > h4, .textxl > h5, .textxl > h6{
+    @apply text-xl
+}
+.text2Xl > p:first-child, .text2xl > h1, .text2xl > h2,  .text2xl > h3, .text2xl > h4, .text2xl > h5, .text2xl > h6{
+    @apply text-2xl
+}
+.text3Xl > p:first-child, .text3xl > h1, .text3xl > h2,  .text3xl > h3, .text3xl > h4, .text3xl > h5, .text3xl > h6 {
+    @apply text-3xl
+}
+.text4Xl > p:first-child, .text4Xl > h1, .text4Xl > h2,  .text4Xl > h3, .text4Xl > h4, .text4Xl > h5, .text4Xl > h6 {
+    @apply text-4xl
+}
+.text5Xl > p:first-child, .text5Xl > h1, .text5Xl > h2,  .text5Xl > h3, .text5Xl > h4, .text5Xl > h5, .text5Xl > h6 {
+    @apply text-5xl
+}
+.my5 {
+    @apply my-5
+}
+.my8 {
+    @apply my-8
+}
+.my10 {
+    @apply my-10
+}
+.bgTransparent {
+    @apply bg-white
+}
+.bgBlack {
+    @apply bg-black text-white p-10
+}
+.bgSlate100 {
+    @apply bg-slate-100
+}
+.bgSlate900 {
+    @apply bg-slate-900 text-white p-10
+}
+.table-content table {
+    @apply w-full
+}
+.table-content table th,
+.table-content table td {
+    @apply p-3
+}
+.table-content table thead {
+    @apply bg-slate-200
+}
+.table-content table tbody tr:nth-child(even) {
+    @apply bg-gray-100
 }
