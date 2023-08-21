@@ -19,7 +19,7 @@ const TitleH3 = ({blok}) => {
     }
   };
   return (
-    <h2 className={`text-xl uppercase ${textAlign(
+    <h2 className={`text-xl font-[500] uppercase ${textAlign(
       blok.textAlign
     )}`}>{blok.text}</h2>
   )
