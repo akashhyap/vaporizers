@@ -5,28 +5,36 @@ import Page from "@/components/Page";
 import Blog from "@/components/Blog";
 import Section from "@/components/Section";
 import Review from "@/components/Review";
+import Comparisons from "@/components/Comparisons";
+import Blogs from "@/components/Blogs";
 import Grid from "@/components/Grid";
 import Cols from "@/components/Cols";
 import Content from "@/components/Content";
 import HtmlElements from "@/components/HtmlElements";
 import Picture from "@/components/Picture";
+import SectionHeader from "@/components/SectionHeader";
 import TitleH1 from "@/components/TitleH1";
 import TitleH2 from "@/components/TitleH2";
 import TitleH3 from "@/components/TitleH3";
+import Button from "@/components/Button";
 
 const components = {
   page: Page,
   blog: Blog,
   section: Section,
   review: Review,
+  comparisons: Comparisons,
+  blogs: Blogs,
   grid: Grid,
   cols: Cols,
   content: Content,
   htmlElements: HtmlElements,
   picture: Picture,
+  sectionHeader: SectionHeader,
   titleH1: TitleH1,
   titleH2: TitleH2,
   titleH3: TitleH3,
+  button: Button,
 };
 
 storyblokInit({

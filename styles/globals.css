@@ -9,10 +9,10 @@ html, body {
     @apply grid-cols-1
 }
 .g-cols-2 {
-    @apply grid-cols-1 lg:grid-cols-2
+    @apply grid-cols-1 md:grid-cols-2
 }
 .g-cols-3 {
-    @apply grid-cols-1 lg:grid-cols-3
+    @apply grid-cols-1 md:grid-cols-3
 }
 .full-cover {
     @apply w-full object-cover
@@ -53,17 +53,87 @@ html, body {
 .my10 {
     @apply my-10
 }
+.my20 {
+    @apply my-20
+}
+.my24 {
+    @apply my-24
+}
+.my28 {
+    @apply my-28
+}
+.mb8 {
+    @apply mb-8
+}
+.pX10 {
+    @apply px-10
+}
+.pX50 {
+    @apply px-[50px]
+}
+.pX0 {
+    @apply px-0;
+}
+.pY10 {
+    @apply py-10;
+}
+.pY16 {
+    @apply py-16;
+}
+.pY50 {
+    @apply py-[50px];
+}
+.pY75 {
+    @apply py-[75px];
+}
+.pY0 {
+    @apply py-0;
+}
 .bgTransparent {
-    @apply bg-white
+    @apply bg-transparent
 }
 .bgBlack {
-    @apply bg-black text-white p-10
+    @apply bg-black text-white
 }
 .bgSlate100 {
     @apply bg-slate-100
 }
 .bgSlate900 {
-    @apply bg-slate-900 text-white p-10
+    @apply bg-slate-900 text-white
+}
+.bgGray100 {
+    @apply bg-gray-100
+}
+.bg-231f20 {
+    @apply text-white;
+   background-color: #231f20
+}
+.bgBrown {
+    background-color: #d3d1c6;
+}
+.maxW4Xl {
+    @apply max-w-4xl mx-auto
+}
+.maxWNone {
+    @apply max-w-none
+}
+.itemStart {
+    @apply items-start
+}
+.itemCenter {
+    @apply items-center
+}
+.itemEnd {
+    @apply items-end
+}
+.textLeft {
+    @apply text-left
+}
+.textCenter {
+    @apply text-center
+}
+.textRight {
+    @apply text-right
 }
 .table-content table {
     @apply w-full

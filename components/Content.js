@@ -24,8 +24,23 @@ const Content = ({ blok }) => {
         break;
     }
   };
+  let maxWidth = (val) => {
+    switch (blok.maxWidth) {
+      case "max-w-4xl":
+        return "maxW4Xl";
+        break;
+      default:
+        return "maxWNone";
+        break;
+    }
+  };
   return (
-    <div className={`leading-loose ${textSize(blok.textSize)}`} {...storyblokEditable(blok)}>
+    <div
+      className={`leading-loose ${textSize(blok.textSize)} ${maxWidth(
+        blok.maxWidth
+      )}`}
+      {...storyblokEditable(blok)}
+    >
       {render(blok.body)}
     </div>
   );

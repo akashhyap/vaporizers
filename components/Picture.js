@@ -34,7 +34,7 @@ const Picture = ({ blok }) => {
     }
   };
   return (
-    <div className={`relative ${margin(blok.margin)}`}>
+    <div className={`relative ${margin(blok.margin)} aspect-w-16 aspect-h-9`}>
       {blok?.image?.filename && (
         <img
           className={`rounded-lg ${imageStyles(blok.imageStyle)}`}

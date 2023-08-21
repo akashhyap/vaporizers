@@ -7,7 +7,7 @@ import {
 } from "@storyblok/react";
 
 export default function Home({ story }) {
-console.log("story home", story);
+// console.log("story home", story);
   return (
     <>
       <Head>
