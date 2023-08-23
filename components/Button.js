@@ -47,7 +47,7 @@ const Button = ({ blok }) => {
   };
   return (
     <div className={`${textAlign(blok.textAlign)} mt-10`}>
-      <Link href={blok.link.cached_url} className={`${bgColor(blok.bgColor)} py-2 px-3 rounded-md`}>{blok.label}</Link>
+      <Link href={blok.link.cached_url} className={`${bgColor(blok.bgColor)} p-3 rounded-md`}>{blok.label}</Link>
     </div>
   );
 };

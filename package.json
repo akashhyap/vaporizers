@@ -10,6 +10,7 @@
     "proxy": "mkcert -install && mkcert localhost && local-ssl-proxy --source 3010 --target 3000 --cert localhost.pem --key localhost-key.pem"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.17",
     "@storyblok/react": "^2.4.4",
     "autoprefixer": "10.4.15",
     "dompurify": "^3.0.5",

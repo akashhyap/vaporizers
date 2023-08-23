@@ -1,6 +1,11 @@
 import "@/styles/globals.css";
 import { storyblokInit, apiPlugin } from "@storyblok/react";
 
+import Layout from "@/components/Layout";
+import Config from "@/components/Config";
+import Menu from "@/components/Menu";
+import Submenu from "@/components/Submenu";
+import Footer from "@/components/Footer";
 import Page from "@/components/Page";
 import Blog from "@/components/Blog";
 import Section from "@/components/Section";
@@ -19,6 +24,10 @@ import TitleH3 from "@/components/TitleH3";
 import Button from "@/components/Button";
 
 const components = {
+  config: Config,
+  menu: Menu,
+  submenu: Submenu,
+  footer: Footer,
   page: Page,
   blog: Blog,
   section: Section,
@@ -43,7 +52,10 @@ storyblokInit({
   components,
 });
 
-
 export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  return (
+    <Layout story={pageProps.config}>
+      <Component {...pageProps} />
+    </Layout>
+  );
 }
