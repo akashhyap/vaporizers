@@ -7,7 +7,7 @@ import {
 } from "@storyblok/react";
 
 export default function Page({ story }) {
-  // console.log(story);
+  console.log("slug story", story);
   // story = useStoryblokState(story);
   return (
     <>
@@ -19,7 +19,9 @@ export default function Page({ story }) {
         </title>
       </Head>
 
-      <StoryblokComponent blok={story.content} all={story} />
+      <div className="max-w-[90%] xl:max-w-4xl mx-auto min-h-screen py-10">
+        <StoryblokComponent blok={story.content} all={story} />
+      </div>
     </>
   );
 }

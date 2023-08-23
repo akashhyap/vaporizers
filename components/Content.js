@@ -38,7 +38,7 @@ const Content = ({ blok }) => {
     <div
       className={`leading-loose ${textSize(blok.textSize)} ${maxWidth(
         blok.maxWidth
-      )}`}
+      )} [&>h2]:text-4xl [&>h2]:my-5`}
       {...storyblokEditable(blok)}
     >
       {render(blok.body)}
