@@ -10,7 +10,7 @@ const dateFormatter = new Intl.DateTimeFormat("en-US", {
 });
 
 const BlogTeaser = ({ article, slug, category }) => {
-  // console.log("blog teaser", article);
+  console.log("blog teaser", article);
 
   const isPageComponent = article?.component == "page";
   let date = !isPageComponent && new Date(article?.date?.split(" ")[0]);
@@ -23,7 +23,7 @@ const BlogTeaser = ({ article, slug, category }) => {
             return (
               <div key={item._uid}>
                 <Link href={`/${slug}`}>
-                  <h2 className="text-3xl">{item.text}</h2>
+                  <h2 className="text-2xl">{item.text}</h2>
                 </Link>
               </div>
             );

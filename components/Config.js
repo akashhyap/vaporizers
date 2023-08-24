@@ -3,6 +3,7 @@ import { Fragment, useState } from "react";
 import Link from "next/link";
 import { StoryblokComponent } from "@storyblok/react";
 import { Transition } from "@headlessui/react";
+import CustomStoryblokComponent from "./StoryblokMenuComponent";
 
 const Config = ({ blok }) => {
   // console.log("config", blok);
@@ -52,7 +53,11 @@ const Config = ({ blok }) => {
           </div>
           <nav className="hidden md:flex space-x-8">
             {blok?.header_menu.map((nestedBlok) => (
-              <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
+              <StoryblokComponent
+                blok={nestedBlok}
+                key={nestedBlok._uid}
+                closeMenu={() => setMenuOpen(false)}
+              />
             ))}
           </nav>
         </div>
@@ -130,7 +135,11 @@ const Config = ({ blok }) => {
             </div>
             <div className="px-4 pt-2 pb-3 mt-5 sm:px-3 flex flex-col">
               {blok?.header_menu.map((nestedBlok) => (
-                <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
+                <CustomStoryblokComponent
+                  blok={nestedBlok}
+                  key={nestedBlok._uid}
+                  closeMenu={() => setMenuOpen(false)}
+                />
               ))}
             </div>
           </div>

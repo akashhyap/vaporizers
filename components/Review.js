@@ -44,7 +44,7 @@ const Review = ({ blok }) => {
         return <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />;
       })}
       <hr />
-      <div className="mx-auto max-w-7xl px-3 md:px-12 grid lg:grid-cols-3 gap-6 mb-10">
+      <div className="grid lg:grid-cols-3 gap-6 mb-10">
         {blog.filter(filterSiblingStories).map((story) => {
           // console.log("nested", story.full_slug);
           if (story.content.component !== "page") {

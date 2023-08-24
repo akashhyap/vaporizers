@@ -7,7 +7,7 @@ import {
 } from "@storyblok/react";
 
 export default function Page({ story }) {
-  console.log("slug story", story);
+  // console.log("slug story", story);
   // story = useStoryblokState(story);
   return (
     <>
