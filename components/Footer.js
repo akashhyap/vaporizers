@@ -6,13 +6,13 @@ import { render } from "storyblok-rich-text-react-renderer";
 const Footer = ({ blok }) => {
   // console.log("footer", blok);
   return (
-    <div className="bg-[#d9bca9] pt-9">
+    <div className="footer bg-[#d9bca9] pt-9">
       <div className="md:max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex flex-wrap justify-between items-center">
           <div className="relative">
             <Image src={blok?.logo.filename} alt="" width={250} height={200} />
           </div>
-          <div className="flex gap-5">
+          <div className="flex flex-wrap gap-3 lg:gap-5 mt-5 lg:mt-0">
             {blok?.footer.map((nestedBlok) => (
               <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
             ))}

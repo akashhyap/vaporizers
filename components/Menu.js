@@ -97,7 +97,7 @@ const Menus = ({ blok, closeMenu }) => {
       ) : (
         <Link
           href={`/${blok.link.cached_url}`}
-          className="text-lg md:text-base mb-4 md:mb-0 font-medium text-black hover:text-gray-900"
+          className="menulinks text-lg md:text-base mb-4 md:mb-0 font-medium text-black hover:text-gray-900"
           onClick={closeMenu}
         >
           {blok.title}
